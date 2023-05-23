@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SessionsTest-Remote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/queries.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body onload='document.form1.email.focus()'>
+
+  <div class="mainCon">
+
+    <h2 class="pageTitle">Which TV Series is the Best?</h2>
+
+    <button message="poll" parameter1="one" class="webtrigger-button w-button">Money Heist</button>
+    <button message="poll" parameter1="two" class="webtrigger-button w-button">Breaking Bad</button>
+
+    <button message="poll" parameter1="three" class="webtrigger-button w-button">Game of Thrones</button>
+    <button message="poll" parameter1="four" class="webtrigger-button w-button">Sherlock</button>
+
+
+    <div class="emailForm">
+      <form name="form1">
+        <label class="emailLabel" for="email">Enter your email:</label>
+        <input class="emailInput" type="email" id="email" name="email" required>
+        <input message="em" parameter2="" class="webtrigger-button inputSubmit" type="submit">
+      </form>
+    </div>
+
+
+  </div>
+
+  <!-- <tr>
+        <td>
+        <button message="goBack" class="webtrigger-button w-button goback">Go Back</button>
+        </td>
+      </tr> -->
+<!--  </table>-->
+</body>
+
+</html>
