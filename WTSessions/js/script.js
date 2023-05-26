@@ -17,7 +17,7 @@ $(document).ready(function () {
   //parse all buttons to add onclick functions with proper url
   $(".webtrigger-button").each(function () {
     this.onclick = function () {
-      var url = rootPath + "?apikey=" + apikey + "&playerDeviceIDs=" + Deviceid + "&message=" + this.getAttribute("message");
+      var url = rootPath + "?apikey=" + apikey + "&Deviceid=" + Deviceid + "&message=" + this.getAttribute("message");
       //parse potential parameters
       if (this.getAttribute("parameter1") != undefined)
         url += "&parameter1=" + this.getAttribute("parameter1");
@@ -38,7 +38,7 @@ $(document).ready(function () {
   });
 
   //send initialization message
-  var initUrl = rootPath + "?apikey=" + apikey + "&playerDeviceIDs=" + Deviceid + "&message=startNow&parameter3=" + sessionid;
+  var initUrl = rootPath + "?apikey=" + apikey + "&Deviceid=" + Deviceid + "&message=startNow&parameter3=" + sessionid;
   httpGet(initUrl);
 
 });
