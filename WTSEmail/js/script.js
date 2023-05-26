@@ -42,7 +42,7 @@ $(document).ready(function () {
     });
 
     //send initialization message
-    var initUrl = rootPath + "?apikey=" + apikey + "&Deviceid=" + Deviceid + "&message=startNow&parameter3=" + sessionid;
+    var initUrl = rootPath + "?apikey=" + apikey + "&Deviceid=" + Deviceid + "&message=startNow&sessionid=" + sessionid;
     httpGet(initUrl);
 
 });
